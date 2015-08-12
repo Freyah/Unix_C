@@ -28,5 +28,13 @@
 *.x86_64
 *.hex
 
+
+
 # Debug files
 *.dSYM/
+
+# Xcode files
+*.xcodeproj
+*.xcscheme
+*.pbxproj
+*.plist
