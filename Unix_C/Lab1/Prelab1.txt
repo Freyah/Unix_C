@@ -1,0 +1,48 @@
+1. Revision
+Explain what each of the following C programs does:
+(a)	(Conditions)
+1.	Scans for a number, then assigns it to the variable ‘number’
+2.	Checks if the number is between 1 and 9
+a.	If no – prints “Out of range”
+b.	If yes - Checks if the number is not 5
+i.	If yes prints “Wrong”
+ii.	Anything else prints “Correct”
+
+(b)	(Loops)
+1.	Scans for a number, then assigns it to the variable ‘count’
+2.	Assigns the variable ‘i’ to have a value of 0
+3.	Enters a loop
+a.	For as long as the value of i is less than the value of count, the value of i will be printed, then incremented by one and printed again.
+
+The While loop could be replaced with a For loop.
+Starting at the value of variable i, (0) and incrementing by 1until the value of the variable count is reached.
+for(i=0; i<count; i++)
+{
+printf(“%d”, i);
+}
+
+(c) (Functions)
+1. A function called readInt is created. This function asks for the user to input an integer, then scans it and stores it as the variable result.
+2. A function called printInt is created. This function prints the value stored in the variable x.
+3. In the main function there are three variables. Variables a and b take the value of that is input and read by the readInt function. Variable c is calculated by (a+b)*(a-b)
+4. The printInt function is then called, which prints the value of the variable c.
+
+
+2. Forward declarations
+Say you have a .c file containing five functions. What forward declarations must there be if:
+(a)	 None of the functions call each other.
+
+a.	No forward declarations are needed
+(b)	Each function calls the next one, in order (i.e. the 1st calls the 2nd, the 2nd calls the 3rd, etc.)
+
+a.	The next function must be declared prior to the function that calls it
+(c)	 Each function calls the previous one (i.e. the 5th calls the 4th, the 4th calls the 3rd, etc.)
+
+a.	No forward declarations are needed
+(d)	The 1st and 5th functions both call the 2nd, 3rd and 4th.
+
+a.	The 2nd, 3rd and 4th functions must be declared before the 1st and 5th
+(e)	 The 2nd, 3rd and 4th functions all call the 1st and 5th.
+
+a.	The 1st and 5th functions must be declared prior to the 2nd, 3rd and 4th
+
